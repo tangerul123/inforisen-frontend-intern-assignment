@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  /* body/default = Inter, heading utility = Parkinsans */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-parkinsans), ui-sans-serif, sans-serif;
+
+  --color-primary: #ff8025;
+  --color-primary-dark: #e85d1f;
+  --color-primary-light: #fff3ec;
+  --color-ink: #1a1a1a;
+  --color-muted: #343E56;
+
+  /* brand button gradient — FF9243 → DD6017 → 983200 */
+  --color-btn-from: #ff9243;
+  --color-btn-mid: #dd6017;
+  --color-btn-to: #983200;
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --radius-card: 1rem;
+}
+
+body {
+  color: var(--color-ink);
+}
+
+/* heading — Figma 135% line-height / 1% letter-spacing */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+@layer components {
+  .btn-gradient {
+    background-image: linear-gradient(
+      135deg,
+      var(--color-btn-from) 0%,
+      var(--color-btn-mid) 50%,
+      var(--color-btn-to) 100%
+    );
+  }
+
+  .text-gradient {
+    background-image: linear-gradient(
+      135deg,
+      var(--color-btn-from) 0%,
+      var(--color-btn-mid) 55%,
+      var(--color-btn-to) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* hero surface — soft peach with an orange glow in the lower-left */
+  .hero-surface {
+    background:
+      radial-gradient(1100px 520px at 10% 92%, rgba(255, 107, 44, 0.55), transparent 62%),
+      linear-gradient(120deg, #fdf1e7 0%, #f6e7d8 42%, #fdf2e9 68%, #fffaf5 100%);
+  }
+}
