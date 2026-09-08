@@ -2,30 +2,19 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 
-/** Faint L-shaped orange outline hugging the top-left corner, fading out at the ends. */
+/**
+ * L-shaped orange outline hugging the top-left corner.
+ * A real bordered box (rounded to match the card) so it always aligns with the
+ * card's corner; the mask fades the two far ends out.
+ */
 function CornerOutline() {
+  const fade = "linear-gradient(135deg, #000 0%, #000 38%, transparent 72%)";
   return (
-    <svg
-      viewBox="0 0 56 56"
-      fill="none"
+    <span
       aria-hidden="true"
-      className="pointer-events-none absolute left-0 top-0 h-14 w-14"
-    >
-      <defs>
-        <linearGradient id="faqCorner" x1="56" y1="0" x2="0" y2="56" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#D55B02" stopOpacity="0" />
-          <stop offset="0.4" stopColor="#D55B02" stopOpacity="0.55" />
-          <stop offset="0.6" stopColor="#D55B02" stopOpacity="0.55" />
-          <stop offset="1" stopColor="#D55B02" stopOpacity="0" />
-        </linearGradient>
-      </defs>
-      <path
-        d="M55 1 H17 A16 16 0 0 0 1 17 V55"
-        stroke="url(#faqCorner)"
-        strokeWidth="1"
-        strokeLinecap="round"
-      />
-    </svg>
+      style={{ WebkitMaskImage: fade, maskImage: fade }}
+      className="pointer-events-none absolute left-0 top-0 h-12 w-12 rounded-tl-2xl border-l-[1.5px] border-t-[1.5px] border-[#D55B02]/35 blur-[1px]"
+    />
   );
 }
 
