@@ -54,7 +54,7 @@ export default function GrowthTimeline() {
           }
         />
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {growthTimeline.map((phase, i) => (
             <Reveal key={phase.id} delay={i * 0.1}>
               <div className="h-full rounded-2xl border border-primary/45 bg-white p-4 shadow-[0_2px_16px_rgba(0,0,0,0.04)]">

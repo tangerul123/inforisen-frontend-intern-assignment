@@ -57,7 +57,7 @@ export default function PaymentMethods() {
       </div>
 
       {/* ---------- Desktop stage (map + arc of badges) ---------- */}
-      <div className="relative mx-auto mt-12 hidden h-[380px] w-full max-w-[1439px] sm:block lg:h-[480px]">
+      <div className="relative mx-auto mt-12 hidden h-[380px] w-full max-w-[1439px] sm:block lg:h-[440px] xl:h-[480px]">
         <Image
           src="/images/world-map.png"
           alt=""
@@ -112,7 +112,7 @@ export default function PaymentMethods() {
       {/* ---------- Wordmark ---------- */}
       <div
         aria-hidden="true"
-        className="pointer-events-none mx-auto mt-8 w-full max-w-[1439px] select-none text-center font-heading text-[10vw] font-medium leading-none tracking-[-0.02em] text-[#fcf1e8] sm:mt-4 lg:text-[128px]"
+        className="pointer-events-none mx-auto mt-8 w-full max-w-[1439px] select-none text-center font-heading text-[10vw] font-medium leading-none tracking-[-0.02em] text-[#fcf1e8] sm:mt-4 lg:text-[84px] xl:text-[128px]"
       >
         MULTIPLE PAYMENTS
       </div>
