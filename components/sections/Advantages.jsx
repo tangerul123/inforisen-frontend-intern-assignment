@@ -19,7 +19,7 @@ export default function Advantages() {
         className="pointer-events-none absolute left-0 top-0 h-auto w-[46vw] max-w-[760px] select-none"
       />
       <Image
-        src="/images/advantages/shape-bottom-right-.svg"
+        src="/images/advantages/shape-bottom-right-.png"
         alt=""
         width={640}
         height={420}

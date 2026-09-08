@@ -33,8 +33,8 @@ export const footerColumns = [
 
 // Decorative SVG slots — drop your own artwork at these paths.
 export const footerShapes = {
-  top: "/images/footer-shape-top.svg",
-  bottom: "/images/footer-shape-bottom.svg",
+  top: "/images/footer-shape-top.png",
+  bottom: "/images/footer-shape-bottom.png",
 };
 
 export const contactInfo = {

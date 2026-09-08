@@ -38,9 +38,8 @@ export default function Footer() {
         src={footerShapes.top}
         alt=""
         aria-hidden="true"
-        width={1440}
+        width={1920}
         height={240}
-        unoptimized
         className="pointer-events-none absolute inset-x-0 top-0 h-auto w-full select-none"
       />
       <Image
@@ -49,7 +48,6 @@ export default function Footer() {
         aria-hidden="true"
         width={1920}
         height={200}
-        unoptimized
         className="pointer-events-none absolute inset-x-0 bottom-0 h-auto w-full select-none"
       />
 
