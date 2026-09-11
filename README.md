@@ -1,4 +1,4 @@
-# Inforisen Frontend Intern Assignment
+# Next.js landing page SMM panel
 
 A modern and fully responsive SMM Panel landing page developed as part of the Frontend Developer Intern technical assignment for Inforisen.
 
